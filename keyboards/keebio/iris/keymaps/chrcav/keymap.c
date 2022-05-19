@@ -105,7 +105,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 }
 
-void encoder_update_user(uint8_t index, bool clockwise) {
+bool encoder_update_user(uint8_t index, bool clockwise) {
     if((get_mods() & MOD_MASK_ALT) == MOD_MASK_ALT) {
       // index 0 not installed
       if (index == 1) {
@@ -156,4 +156,5 @@ void encoder_update_user(uint8_t index, bool clockwise) {
           }
       }
     }
+    return false;
 }
