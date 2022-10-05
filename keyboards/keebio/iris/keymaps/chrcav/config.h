@@ -19,6 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // #define USE_I2C
 #define EE_HANDS
+#define MASTER_LEFT
 
 #define ENCODERS_PAD_B { B3 }
 #define ENCODERS_PAD_B_RIGHT { F6 }
